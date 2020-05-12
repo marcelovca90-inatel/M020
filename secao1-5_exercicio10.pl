@@ -2,32 +2,32 @@
 % Secao 1.5, Exercicio 10
 
 capital(acre,rioBranco).
+capital(alagoas,maceio).
 capital(amapa,macapa).
 capital(amazonas,manaus).
-capital(para,belem).
-capital(rondonia,portoVelho).
-capital(roraima,boaVista).
-capital(tocantins,palmas).
-capital(alagoas,maceio).
 capital(bahia,salvador).
 capital(ceara,fortaleza).
-capital(maranhao,saoLuis).
-capital(paraiba,joaoPessoa).
-capital(pernambuco,recife).
-capital(piaui,teresina).
-capital(rioGrandeDoNorte,natal).
-capital(sergipe,aracaju).
-capital(goias,goiania).
-capital(matoGrosso,cuiaba).
-capital(matoGrossoDoSul,campoGrande).
 capital(distritoFederal,brasilia).
 capital(espiritoSanto,vitoria).
+capital(goias,goiania).
+capital(maranhao,saoLuis).
+capital(matoGrosso,cuiaba).
+capital(matoGrossoDoSul,campoGrande).
 capital(minasGerais,beloHorizonte).
-capital(saoPaulo,saoPaulo).
-capital(rioDeJaneiro,rioDeJaneiro).
+capital(para,belem).
+capital(paraiba,joaoPessoa).
 capital(parana,curitiba).
+capital(pernambuco,recife).
+capital(piaui,teresina).
+capital(rioDeJaneiro,rioDeJaneiro).
+capital(rioGrandeDoNorte,natal).
 capital(rioGrandeDoSul,portoAlegre).
+capital(rondonia,portoVelho).
+capital(roraima,boaVista).
 capital(santaCatarina,florianopolis).
+capital(saoPaulo,saoPaulo).
+capital(sergipe,aracaju).
+capital(tocantins,palmas).
 
 % estados da regiao sul
 sul(parana).
@@ -46,27 +46,27 @@ nordeste(rioGrandeDoNorte).
 nordeste(sergipe).
 
 % cinco menores capitais do pais
-pequena(rioBranco).
 pequena(boaVista).
-pequena(vitoria).
-pequena(palmas).
 pequena(florianopolis).
+pequena(palmas).
+pequena(rioBranco).
+pequena(vitoria).
 
 % cinco maiores capitais do pais
-grande(saoPaulo).
-grande(rioDeJaneiro).
 grande(brasilia).
-grande(salvador).
 grande(fortaleza).
+grande(rioDeJaneiro).
+grande(salvador).
+grande(saoPaulo).
 
 % a)
-% capital(_,C),pequena(C).
+% pequena(C).
 
 % b)
-% capital(E,_C),pequena(_C).
+% capital(E,_C), pequena(_C).
 
 % c)
-% capital(E,_C),nordeste(E),grande(_C).
+% capital(E,_C), nordeste(E), grande(_C).
 
 % d)
 % cosmopolita(C) :- capital(_,C), grande(C), sul(C).
