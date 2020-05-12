@@ -1,5 +1,5 @@
-% https://swish.swi-prolog.or
-% Secao 1.5, Exercício 20 (7ª edição)
+% https://swish.swi-prolog.org/
+% Secao 1.5, Exercício 20 (7a edicao)
 
 cidade(beloHorizonte).
 cidade(saoPaulo).

@@ -1,5 +1,5 @@
-% https://swish.swi-prolog.or
-% Secao 1.5, Exercício 19 (7ª edição)
+% https://swish.swi-prolog.org/
+% Secao 1.5, Exercício 19 (7a edicao)
 
 item(bolo).
 
@@ -38,10 +38,10 @@ ingredienteDe(leite,cobertura).
 ingredienteDe(chocolate,cobertura).
 
 % a)
-% ingredienteDe(Y,_),seco(Y).
+% ingredienteDe(Y,_), seco(Y).
 
 % b)
-% ingredienteDe(_Y,X),perecivel(X),liquido(_Y).
+% ingredienteDe(_Y,X), perecivel(X), liquido(_Y).
 
 % c)
 % encontradoEm(Y,X) :- ingredienteDe(Y,X).

@@ -30,11 +30,11 @@ progenitor(silvia,amanda).
 progenitor(felipe,amanda).
 
 % a)
-% paiDe(X, Y) :- homem(X), progenitor(X, Y).
+% paiDe(X,Y) :- homem(X), progenitor(X,Y).
 
 % b)
-% filhaDe(X, Y) :- mulher(X), progenitor(Y, X).
+% filhaDe(X,Y) :- mulher(X), progenitor(Y,X).
 
 % c)
-% ancestralDe(X, Y) :- progenitor(X, Y).
-% ancestralDe(X, Y) :- progenitor(Z, Y), ancestralDe(X, Z).
+% ancestralDe(X,Y) :- progenitor(X,Y).
+% ancestralDe(X,Y) :- progenitor(Z,Y), ancestralDe(X,Z).

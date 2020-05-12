@@ -47,11 +47,11 @@ parteDe(bico,pneu).
 parteDe(carcaca,pneu).
 
 % a)
-% pequena(Y),parteDe(Y,_).
+% pequena(Y), parteDe(Y,_).
 
 % b)
-% parteDe(_Y,X),grande(X),pequena(_Y).
+% parteDe(_Y,X), grande(X), pequena(_Y).
 
 % c)
-% componenteDe(Y, X) :- parteDe(Y, X).
-% componenteDe(Y,X) :- parteDe(Y, Z), componenteDe(Z, X).
+% componenteDe(Y,X) :- parteDe(Y,X).
+% componenteDe(Y,X) :- parteDe(Y,Z), componenteDe(Z,X).
