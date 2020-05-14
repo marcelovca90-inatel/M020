@@ -32,7 +32,7 @@ pequena(batente).
 pequena(bico).
 pequena(carcaca).
 
-% X eh parte de Y
+% parteDe(X,Y) significa que X eh parte de Y
 parteDe(diferencial,transmissao).
 parteDe(rolamento,diferencial).
 parteDe(cubo,diferencial).
@@ -47,11 +47,12 @@ parteDe(bico,pneu).
 parteDe(carcaca,pneu).
 
 % a)
-% pequena(Y), parteDe(Y,_).
+% pequena(X), parteDe(X,_).
 
 % b)
-% parteDe(_Y,X), grande(X), pequena(_Y).
+% parteDe(X,_Y), grande(X), pequena(_Y).
 
 % c)
-% componenteDe(Y,X) :- parteDe(Y,X).
-% componenteDe(Y,X) :- parteDe(Y,Z), componenteDe(Z,X).
+% componenteDe(X,Y) significa que X eh componente de Y
+% componenteDe(X,Y) :- parteDe(X,Y).
+% componenteDe(X,Y) :- parteDe(X,Z), componenteDe(Z,Y).

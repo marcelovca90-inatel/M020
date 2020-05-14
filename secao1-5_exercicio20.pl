@@ -2,11 +2,11 @@
 % Secao 1.5, Exercício 20 (7a edicao)
 
 cidade(beloHorizonte).
-cidade(saoPaulo).
-cidade(rioDeJaneiro).
 cidade(itabira).
-cidade(voltaRedonda).
+cidade(saoPaulo).
 cidade(guarulhos).
+cidade(rioDeJaneiro).
+cidade(voltaRedonda).
 
 voo(beloHorizonte,saoPaulo).
 voo(beloHorizonte,rioDeJaneiro).
@@ -25,5 +25,6 @@ voo(saoPaulo,guarulhos).
 % voo(X,rioDeJaneiro).
 
 % c)
+% rota(X,Y) significa que X eh uma rota de Y
 % rota(X,Y) :- voo(X,Y).
-% rota(X,Y) :- voo(Z,Y), rota(X,Z).
+% rota(X,Y) :- voo(X,Z), rota(Z,Y).

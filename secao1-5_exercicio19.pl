@@ -27,6 +27,7 @@ perecivel(manteiga).
 perecivel(cobertura).
 perecivel(leite).
 
+% ingredienteDe(X,Y) significa que X eh ingrediente de Y
 ingredienteDe(massa,bolo).
 ingredienteDe(ovo,massa).
 ingredienteDe(fermento,massa).
@@ -38,11 +39,12 @@ ingredienteDe(leite,cobertura).
 ingredienteDe(chocolate,cobertura).
 
 % a)
-% ingredienteDe(Y,_), seco(Y).
+% ingrediente(X), seco(X), ingredienteDe(X,_Y).
 
 % b)
-% ingredienteDe(_Y,X), perecivel(X), liquido(_Y).
+% ingrediente(X), perecivel(X), ingredienteDe(_Y,X), liquido(_Y).
 
 % c)
-% encontradoEm(Y,X) :- ingredienteDe(Y,X).
-% encontradoEm(Y,X) :- ingredienteDe(Y,Z), encontradoEm(Z,X).
+% encontradoEm(X,Y) significa que X eh encontrado em Y
+% encontradoEm(X,Y) :- ingredienteDe(X,Y).
+% encontradoEm(X,Y) :- ingredienteDe(X,Z), encontradoEm(Z,Y).
