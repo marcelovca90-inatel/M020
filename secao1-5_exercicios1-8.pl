@@ -46,7 +46,7 @@ presa(X) :- come(_,X), animal(X).
 % presa(X), not(come(raposa,X)).
 % 
 % 7)
-% herbivoro(X) :- come(X,Y), not(animal(Y)).
+% herbivoro(X) :- come(X,Y), planta(Y).
 % 
 % 8)
 % herbivoro(X).

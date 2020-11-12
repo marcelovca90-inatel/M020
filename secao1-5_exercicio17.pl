@@ -36,5 +36,6 @@ progenitor(felipe,amanda).
 % filhaDe(X,Y) :- mulher(X), progenitor(Y,X).
 
 % c)
+% ancestralDe(X,Y) significa que X eh ancestral de Y
 % ancestralDe(X,Y) :- progenitor(X,Y).
-% ancestralDe(X,Y) :- progenitor(Z,Y), ancestralDe(X,Z).
+% ancestralDe(X,Y) :- progenitor(X,Z), ancestralDe(Z,Y).
