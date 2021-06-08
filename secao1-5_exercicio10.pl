@@ -69,7 +69,7 @@ grande(saoPaulo).
 % capital(E,_C), nordeste(E), grande(_C).
 
 % d)
-% cosmopolita(C) :- capital(_,C), grande(C), sul(C).
+% cosmopolita(C) :- capital(E,C), grande(C), sul(E).
 
 % e)
 % cosmopolita(C).
