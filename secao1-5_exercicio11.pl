@@ -1,6 +1,7 @@
 % https://swish.swi-prolog.org/
 % Secao 1.5, Exercicio 11
 
+% livro(X,Y,Z) eh "o livro X foi escrito pelo autor Y e eh do genero Z"
 livro('Dom Casmurro', 'Machado de Assis', ficcao).
 livro('Iracema', 'Jose de Alencar', ficcao).
 livro('Memorias Postumas de Bras Cubas', 'Machado de Assis', ficcao).
