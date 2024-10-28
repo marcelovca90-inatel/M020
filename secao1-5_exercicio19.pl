@@ -1,5 +1,5 @@
 % https://swish.swi-prolog.org/
-% Secao 1.5, Exercício 19 (7a edicao)
+% Secao 1.5, Exercicio 19 (7a edicao)
 
 item(bolo).
 
